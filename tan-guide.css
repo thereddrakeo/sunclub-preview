@@ -659,3 +659,30 @@ legend:focus { outline: none; }
   color: rgba(255,255,255,.86);
   font-size: .75rem;
 }
+
+
+/* ---------- LONG-COPY RESPONSIVE SAFETY ---------- */
+.guide-shell > *,
+.guide-intro,
+.guide-card,
+.result-screen,
+.gift-card__copy {
+  min-width: 0;
+}
+.guide-intro h1,
+.guide-intro__lead,
+.benefit-list li > span:last-child,
+.result-screen h2,
+.result-plan p,
+.gift-card h3,
+.gift-card p {
+  overflow-wrap: anywhere;
+}
+@media (max-width: 920px) {
+  .benefit-list {
+    width: min(100%, 590px);
+  }
+  .benefit-list li > span:last-child {
+    min-width: 0;
+  }
+}
