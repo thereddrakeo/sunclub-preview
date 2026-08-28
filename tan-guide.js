@@ -19,9 +19,9 @@
       lastTitle: "Când ai avut ultima expunere intenționată la UV?", lastHelp: "Include solarul sau statul deliberat la soare pentru bronz.",
       lastRecent: "În ultimele 7 zile", lastWeeks: "Acum 2–4 săptămâni", lastOverFour: "Acum mai mult de 4 săptămâni",
       back: "Înapoi", next: "Continuă", finish: "Vezi planul meu", validation: "Alege un răspuns pentru a continua.",
-      minutesEyebrow: "Prima ședință estimată", minutesUnit: "minute",
-      resultStartLabel: "Prima vizită", resultRhythmLabel: "Ritmul recomandat", resultReviewLabel: "Până la nuanța dorită",
-      resultMaintenanceLabel: "Menținerea nuanței",
+      minutesEyebrow: "Interval estimat pentru prima ședință", minutesUnit: "minute",
+      resultStartLabel: "Prima vizită", resultRhythmLabel: "Primele 3 vizite", resultBuildLabel: "După primele 3 vizite",
+      resultReviewLabel: "Până la nuanța dorită", resultMaintenanceLabel: "Menținerea nuanței",
       giftTitle: "Prima ședință cadou la cumpărarea unui abonament",
       giftTerms: "Fă o captură de ecran și arat-o la recepție când cumperi primul abonament.",
       rewardUnlocked: "Surpriza ta este deblocată", viewReward: "Vezi cadoul", surpriseEyebrow: "Surpriză deblocată",
@@ -31,7 +31,7 @@
       screenshotDone: "Am făcut captura", closeReward: "Închide cadoul", expired: "Voucher expirat",
       copyCode: "Copiază codul", copied: "Cod copiat",
       callAction: "Sună pentru prima vizită", restart: "Refă ghidul", uvSummary: "De reținut",
-      uvDetails: "Estimările sunt orientative. Consultantul SUNCLUB confirmă timpul final în funcție de cabină și reacția pielii. Nu folosi solarul pe piele roșie sau iritată și poartă întotdeauna protecția oculară indicată.",
+      uvDetails: "Estimările sunt orientative. Consultantul SUNCLUB confirmă timpul exact în funcție de cabină și reacția pielii. Păstrează minimum 48 de ore între ședințe, nu folosi solarul pe piele roșie sau iritată și poartă protecția oculară indicată.",
       whoLink: "Informații OMS despre UV",
       toneLabels: ["Foarte deschisă", "Deschisă", "Deschis-mediu", "Medie", "Măslinie", "Închisă"],
       gentleBadge: "Plan delicat", gentleTitle: "Un început blând ți se potrivește",
@@ -40,10 +40,10 @@
       balancedIntro: "Poți construi nuanța dorită pas cu pas, urmărind reacția pielii după fiecare vizită.",
       easyBadge: "Plan moderat", easyTitle: "Poți începe cu un ritm moderat",
       easyIntro: "Răspunsurile tale indică o toleranță mai bună, dar progresul gradual rămâne cea mai bună abordare.",
-      minuteNote: "Estimare pentru prima vizită. Consultantul confirmă timpul înainte de ședință.",
-      startPlan: (minutes) => "Începe cu aproximativ " + minutes + " minute. La recepție, consultantul confirmă setarea potrivită pentru cabină.",
-      rhythmGentle: "Aproximativ 2 vizite pe săptămână, cu minimum 48 de ore între ședințe.",
-      rhythmRegular: "Aproximativ 2–3 vizite pe săptămână, fără ședințe în zile consecutive.",
+      minuteNote: "Interval orientativ. Consultantul de la recepție stabilește timpul exact înainte de ședință; când există dubii, alegem mai puține minute.",
+      startPlan: (minMinutes, maxMinutes) => "Punctul de pornire estimat este " + minMinutes + "–" + maxMinutes + " minute. Consultantul verifică pielea și cabina, apoi confirmă timpul exact.",
+      firstThreePlan: "Păstrează primele 3 vizite foarte ușoare și minimum 48 de ore între ședințe. Începe la capătul inferior al intervalului.",
+      afterThreePlan: "Dacă pielea nu este roșie sau iritată, continuă aproximativ o dată la 2 zile. Crește timpul numai gradual și alege întotdeauna varianta cu mai puține minute.",
       targetMaintain: "Nuanța aleasă este deja apropiată de cea actuală. Reevaluează după prima vizită împreună cu consultantul.",
       maintenancePlan: "După ce ajungi la nuanța dorită, continuă orientativ cu 1–2 vizite pe săptămână pentru menținere.",
       targetPlan: (low, high, weeksLow, weeksHigh) => "Aproximativ " + low + "–" + high + " ședințe, adică în jur de " + weeksLow + "–" + weeksHigh + " săptămâni. Rezultatul diferă în funcție de răspunsul natural al pielii."
@@ -65,9 +65,9 @@
       lastTitle: "Когда у вас в последний раз было намеренное воздействие УФ?", lastHelp: "Учитывайте солярий или намеренное пребывание на солнце ради загара.",
       lastRecent: "В последние 7 дней", lastWeeks: "2–4 недели назад", lastOverFour: "Более 4 недель назад",
       back: "Назад", next: "Продолжить", finish: "Показать мой план", validation: "Выберите ответ, чтобы продолжить.",
-      minutesEyebrow: "Примерный первый сеанс", minutesUnit: "минут",
-      resultStartLabel: "Первый визит", resultRhythmLabel: "Рекомендуемый ритм", resultReviewLabel: "До желаемого оттенка",
-      resultMaintenanceLabel: "Поддержание оттенка",
+      minutesEyebrow: "Ориентировочный диапазон первого сеанса", minutesUnit: "минут",
+      resultStartLabel: "Первый визит", resultRhythmLabel: "Первые 3 визита", resultBuildLabel: "После первых 3 визитов",
+      resultReviewLabel: "До желаемого оттенка", resultMaintenanceLabel: "Поддержание оттенка",
       giftTitle: "Первый сеанс в подарок при покупке абонемента",
       giftTerms: "Сделайте снимок экрана и покажите его на ресепшене при покупке первого абонемента.",
       rewardUnlocked: "Ваш сюрприз открыт", viewReward: "Посмотреть подарок", surpriseEyebrow: "Сюрприз открыт",
@@ -77,7 +77,7 @@
       screenshotDone: "Снимок сделан", closeReward: "Закрыть подарок", expired: "Срок ваучера истёк",
       copyCode: "Скопировать код", copied: "Код скопирован",
       callAction: "Позвонить для первого визита", restart: "Пройти заново", uvSummary: "Важно помнить",
-      uvDetails: "Оценки ориентировочные. Консультант SUNCLUB подтверждает итоговое время с учётом кабины и реакции кожи. Не используйте солярий при покраснении или раздражении кожи и всегда надевайте указанную защиту глаз.",
+      uvDetails: "Оценки ориентировочные. Консультант SUNCLUB подтверждает точное время с учётом кабины и реакции кожи. Оставляйте не менее 48 часов между сеансами, не используйте солярий при покраснении или раздражении кожи и всегда надевайте защитные очки.",
       whoLink: "Информация ВОЗ об УФ",
       toneLabels: ["Очень светлая", "Светлая", "Светло-средняя", "Средняя", "Оливковая", "Тёмная"],
       gentleBadge: "Деликатный план", gentleTitle: "Вам подходит мягкое начало",
@@ -86,10 +86,10 @@
       balancedIntro: "Вы можете шаг за шагом двигаться к желаемому оттенку, наблюдая за реакцией кожи после каждого визита.",
       easyBadge: "Умеренный план", easyTitle: "Можно начать с умеренного ритма",
       easyIntro: "Ваши ответы указывают на более высокую переносимость, но постепенный прогресс по-прежнему остаётся лучшим подходом.",
-      minuteNote: "Оценка для первого визита. Консультант подтвердит время перед сеансом.",
-      startPlan: (minutes) => "Начните примерно с " + minutes + " минут. На ресепшене консультант подтвердит настройку для выбранной кабины.",
-      rhythmGentle: "Примерно 2 визита в неделю с интервалом не менее 48 часов.",
-      rhythmRegular: "Примерно 2–3 визита в неделю, без сеансов в последовательные дни.",
+      minuteNote: "Ориентировочный диапазон. Консультант на ресепшене определит точное время перед сеансом; при сомнениях мы выбираем меньше минут.",
+      startPlan: (minMinutes, maxMinutes) => "Ориентировочное начало — " + minMinutes + "–" + maxMinutes + " минут. Консультант оценит кожу и кабину, затем подтвердит точное время.",
+      firstThreePlan: "Первые 3 визита должны быть очень лёгкими, с интервалом не менее 48 часов. Начинайте с нижней границы диапазона.",
+      afterThreePlan: "Если кожа не покраснела и не раздражена, продолжайте примерно раз в 2 дня. Увеличивайте время только постепенно и всегда выбирайте меньшее количество минут.",
       targetMaintain: "Выбранный оттенок уже близок к текущему. После первого визита пересмотрите план вместе с консультантом.",
       maintenancePlan: "После достижения желаемого оттенка ориентировочно продолжайте 1–2 посещения в неделю для поддержания результата.",
       targetPlan: (low, high, weeksLow, weeksHigh) => "Примерно " + low + "–" + high + " сеансов, то есть около " + weeksLow + "–" + weeksHigh + " недель. Результат зависит от естественной реакции кожи."
@@ -195,11 +195,15 @@
     const burn = selected("burn").value;
     const lastExposure = selected("lastExposure").value;
 
-    const baseMinutes = { always: 3, often: 4, sometimes: 5, rarely: 6 };
-    const toneCaps = { 1: 3, 2: 4, 3: 5, 4: 6, 5: 7, 6: 7 };
-    const experienced = ["twoToFourWeeks", "recent"].includes(lastExposure);
-    const bonus = experienced && ["sometimes", "rarely"].includes(burn) ? 1 : 0;
-    const minutes = Math.min(baseMinutes[burn] + bonus, toneCaps[currentTone]);
+    const timeRanges = {
+      1: [2, 3],
+      2: [2, 3],
+      3: [3, 4],
+      4: [4, 6],
+      5: [5, 7],
+      6: [5, 8]
+    };
+    const [minMinutes, maxMinutes] = timeRanges[currentTone];
 
     let style = "balanced";
     if (["always", "often"].includes(burn)) style = "gentle";
@@ -212,12 +216,13 @@
     else if (difference === 3) { low = 7; high = 8; }
     else if (difference >= 4) { low = 9; high = 10; }
     if (style === "gentle" && difference > 0) { low += 1; high += 2; }
+    if (lastExposure === "overFourWeeks" && difference > 0) { low += 1; high += 1; }
 
     const weeklyHigh = style === "gentle" ? 2 : 3;
     const weeksLow = Math.max(1, Math.ceil(low / weeklyHigh));
-    const weeksHigh = Math.max(2, Math.ceil(high / (style === "gentle" ? 2 : 2)));
+    const weeksHigh = Math.max(2, Math.ceil(high / 2));
 
-    return { minutes, style, difference, low, high, weeksLow, weeksHigh };
+    return { minMinutes, maxMinutes, style, difference, low, high, weeksLow, weeksHigh };
   }
 
   function updateRewardDetails() {
@@ -304,10 +309,11 @@
     badge.textContent = dict[plan.style + "Badge"];
     document.getElementById("result-title").textContent = dict[plan.style + "Title"];
     document.getElementById("result-intro").textContent = dict[plan.style + "Intro"];
-    document.getElementById("result-minutes").textContent = plan.minutes;
+    document.getElementById("result-minutes").textContent = plan.minMinutes + "–" + plan.maxMinutes;
     document.getElementById("result-minutes-note").textContent = dict.minuteNote;
-    document.getElementById("result-start").textContent = dict.startPlan(plan.minutes);
-    document.getElementById("result-rhythm").textContent = plan.style === "gentle" ? dict.rhythmGentle : dict.rhythmRegular;
+    document.getElementById("result-start").textContent = dict.startPlan(plan.minMinutes, plan.maxMinutes);
+    document.getElementById("result-rhythm").textContent = dict.firstThreePlan;
+    document.getElementById("result-build").textContent = dict.afterThreePlan;
     document.getElementById("result-review").textContent = plan.difference === 0
       ? dict.targetMaintain
       : dict.targetPlan(plan.low, plan.high, plan.weeksLow, plan.weeksHigh);
