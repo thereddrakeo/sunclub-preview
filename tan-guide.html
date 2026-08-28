@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ghidul tău de bronzare | SUNCLUB Chișinău</title>
+  <meta name="description" content="Răspunde la câteva întrebări și primește un punct de pornire personalizat pentru prima vizită la SUNCLUB, plus un cadou de bun venit.">
+  <link rel="canonical" href="https://www.sunclub.md/tan-guide.html">
+  <link rel="icon" type="image/webp" href="images/logo-original.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="tan-guide.css">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SUNCLUB Chișinău">
+  <meta property="og:title" content="Descoperă punctul tău de pornire la SUNCLUB">
+  <meta property="og:description" content="Un ghid scurt pentru prima vizită, cu un cadou la final.">
+  <meta property="og:url" content="https://www.sunclub.md/tan-guide.html">
+  <meta property="og:image" content="https://www.sunclub.md/images/hero.webp">
+</head>
+<body>
+  <a class="skip-link" href="#guide-card">Sari la chestionar</a>
+
+  <header class="guide-header">
+    <a class="guide-logo" href="./" aria-label="SUNCLUB — pagina principală">
+      <img src="images/logo-original.webp" alt="SUNCLUB" width="1798" height="1436">
+    </a>
+    <div class="guide-header__actions">
+      <div class="language-switcher" aria-label="Selectează limba">
+        <button class="language-button is-active" type="button" data-language="ro" aria-pressed="true">RO</button>
+        <span aria-hidden="true">/</span>
+        <button class="language-button" type="button" data-language="ru" aria-pressed="false">RU</button>
+      </div>
+      <a class="close-guide" href="./" data-copy="exit">Ieși</a>
+    </div>
+  </header>
+
+  <main class="guide-shell">
+    <section class="guide-intro" aria-labelledby="guide-title">
+      <p class="eyebrow" data-copy="eyebrow">Ghid personalizat · 2 minute</p>
+      <h1 id="guide-title" data-copy="title">Cu ce să începi la prima vizită?</h1>
+      <p class="guide-intro__lead" data-copy="lead">Spune-ne puțin despre pielea și experiența ta. La final primești un punct de pornire pentru discuția cu echipa SUNCLUB și un cadou de bun venit.</p>
+      <ul class="benefit-list" aria-label="Beneficiile ghidului">
+        <li><span class="benefit-icon" aria-hidden="true">1</span><span data-copy="benefit1">Ritm orientativ pentru început</span></li>
+        <li><span class="benefit-icon" aria-hidden="true">2</span><span data-copy="benefit2">Ce să discuți la prima vizită</span></li>
+        <li><span class="benefit-icon" aria-hidden="true">3</span><span data-copy="benefit3">Prima ședință cadou la abonament</span></li>
+      </ul>
+      <div class="privacy-note">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10V8a5 5 0 0 1 10 0v2"/><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M12 14v3"/></svg>
+        <span data-copy="privacy">Răspunsurile rămân pe dispozitivul tău. Nu cerem date personale.</span>
+      </div>
+    </section>
+
+    <section class="guide-card" id="guide-card" aria-labelledby="step-heading">
+      <div class="progress-region" id="progress-region" hidden>
+        <div class="progress-copy">
+          <span data-copy="progressLabel">Progres</span>
+          <span id="progress-text">1 / 6</span>
+        </div>
+        <div class="progress-track" role="progressbar" aria-label="Progresul chestionarului" aria-valuemin="1" aria-valuemax="6" aria-valuenow="1">
+          <span id="progress-bar"></span>
+        </div>
+      </div>
+
+      <div class="guide-start" id="start-screen">
+        <div class="start-visual" aria-hidden="true">
+          <svg viewBox="0 0 160 160">
+            <defs>
+              <linearGradient id="sun-gradient" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#ffc56d"/>
+                <stop offset="1" stop-color="#e66b17"/>
+              </linearGradient>
+            </defs>
+            <circle cx="80" cy="80" r="44" fill="url(#sun-gradient)"/>
+            <g stroke="#e66b17" stroke-width="5" stroke-linecap="round">
+              <path d="M80 12v16M80 132v16M12 80h16M132 80h16"/>
+              <path d="m32 32 11 11M117 117l11 11M128 32l-11 11M43 117l-11 11"/>
+            </g>
+            <path d="M59 87c11 12 31 12 42 0" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+            <circle cx="65" cy="70" r="3.5" fill="#fff"/><circle cx="95" cy="70" r="3.5" fill="#fff"/>
+          </svg>
+        </div>
+        <p class="card-kicker" data-copy="startKicker">Pentru vizitatori noi</p>
+        <h2 id="step-heading" data-copy="startTitle">Găsește-ți punctul de pornire</h2>
+        <p data-copy="startText">Sunt șase întrebări scurte. Nu există răspunsuri „corecte” — alege ce te descrie cel mai bine.</p>
+        <button class="primary-action" id="start-button" type="button">
+          <span data-copy="startButton">Începe ghidul</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+        <p class="microcopy" data-copy="startTime">Durează aproximativ 2 minute</p>
+      </div>
+
+      <form id="guide-form" novalidate hidden>
+        <section class="guide-step" data-step="1">
+          <fieldset>
+            <legend tabindex="-1" data-copy="ageTitle">Ai împlinit 18 ani?</legend>
+            <p class="question-help" data-copy="ageHelp">Acest ghid și oferta sunt destinate exclusiv adulților.</p>
+            <div class="choice-grid choice-grid--two">
+              <label class="choice-card"><input type="radio" name="age" value="adult"><span data-copy="yesAdult">Da, am 18 ani sau mai mult</span></label>
+              <label class="choice-card"><input type="radio" name="age" value="minor"><span data-copy="noAdult">Nu, am sub 18 ani</span></label>
+            </div>
+          </fieldset>
+        </section>
+
+        <section class="guide-step" data-step="2" hidden>
+          <fieldset>
+            <legend tabindex="-1" data-copy="toneTitle">Care imagine seamănă cel mai mult cu nuanța naturală a pielii tale?</legend>
+            <p class="question-help" data-copy="toneHelp">Gândește-te la pielea neexpusă recent la soare, nu la bronzul actual.</p>
+            <div class="tone-grid" id="current-tones"></div>
+          </fieldset>
+        </section>
+
+        <section class="guide-step" data-step="3" hidden>
+          <fieldset>
+            <legend tabindex="-1" data-copy="burnTitle">Cum reacționează pielea ta de obicei la soare?</legend>
+            <p class="question-help" data-copy="burnHelp">Alege reacția cea mai apropiată de experiența ta obișnuită.</p>
+            <div class="choice-stack">
+              <label class="choice-card"><input type="radio" name="burn" value="always"><span data-copy="burnAlways">Mă ard aproape întotdeauna și mă bronzez foarte greu</span></label>
+              <label class="choice-card"><input type="radio" name="burn" value="often"><span data-copy="burnOften">Mă ard ușor, apoi capăt puțină culoare</span></label>
+              <label class="choice-card"><input type="radio" name="burn" value="sometimes"><span data-copy="burnSometimes">Uneori mă înroșesc, dar mă bronzez treptat</span></label>
+              <label class="choice-card"><input type="radio" name="burn" value="rarely"><span data-copy="burnRarely">Rareori mă ard și capăt culoare ușor</span></label>
+            </div>
+          </fieldset>
+        </section>
+
+        <section class="guide-step" data-step="4" hidden>
+          <fieldset>
+            <legend tabindex="-1" data-copy="goalTitle">Ce nuanță ți-ar plăcea să obții?</legend>
+            <p class="question-help" data-copy="goalHelp">Aceasta ne ajută să estimăm când ar fi bine să reevaluăm progresul, nu să promitem o nuanță exactă.</p>
+            <div class="tone-grid" id="target-tones"></div>
+          </fieldset>
+        </section>
+
+        <section class="guide-step" data-step="5" hidden>
+          <fieldset>
+            <legend tabindex="-1" data-copy="lastTitle">Când ai avut ultima expunere intenționată la UV?</legend>
+            <p class="question-help" data-copy="lastHelp">Include solarul sau statul deliberat la soare pentru bronz.</p>
+            <div class="choice-stack">
+              <label class="choice-card"><input type="radio" name="lastExposure" value="never"><span data-copy="lastNever">Niciodată / ar fi prima dată</span></label>
+              <label class="choice-card"><input type="radio" name="lastExposure" value="over3"><span data-copy="lastOver3">Acum mai mult de 3 luni</span></label>
+              <label class="choice-card"><input type="radio" name="lastExposure" value="oneToThree"><span data-copy="lastOneToThree">Acum 1–3 luni</span></label>
+              <label class="choice-card"><input type="radio" name="lastExposure" value="twoToFourWeeks"><span data-copy="lastWeeks">Acum 2–4 săptămâni</span></label>
+              <label class="choice-card"><input type="radio" name="lastExposure" value="recent"><span data-copy="lastRecent">În ultimele 7 zile</span></label>
+            </div>
+          </fieldset>
+        </section>
+
+        <section class="guide-step" data-step="6" hidden>
+          <fieldset>
+            <legend tabindex="-1" data-copy="safetyTitle">Înainte de recomandare, se aplică ceva din lista de mai jos?</legend>
+            <p class="question-help" data-copy="safetyHelp">Bifează toate variantele relevante. Aceste răspunsuri nu sunt salvate sau trimise.</p>
+            <div class="choice-stack">
+              <label class="choice-card choice-card--check"><input type="checkbox" name="safety" value="sunburn"><span data-copy="safetySunburn">Am pielea roșie, iritată sau arsă acum</span></label>
+              <label class="choice-card choice-card--check"><input type="checkbox" name="safety" value="medicine"><span data-copy="safetyMedicine">Iau medicamente sau folosesc produse care pot crește sensibilitatea la lumină</span></label>
+              <label class="choice-card choice-card--check"><input type="checkbox" name="safety" value="medical"><span data-copy="safetyMedical">Un medic mi-a recomandat să evit UV sau am antecedente relevante ale pielii</span></label>
+              <label class="choice-card choice-card--check choice-card--none"><input type="checkbox" name="safety" value="none"><span data-copy="safetyNone">Niciuna dintre acestea</span></label>
+            </div>
+          </fieldset>
+        </section>
+
+        <div class="validation-message" id="validation-message" role="alert" aria-live="assertive"></div>
+        <div class="form-actions">
+          <button class="secondary-action" id="back-button" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+            <span data-copy="back">Înapoi</span>
+          </button>
+          <button class="primary-action" id="next-button" type="button">
+            <span data-copy="next">Continuă</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+        </div>
+      </form>
+
+      <section class="result-screen" id="result-screen" aria-live="polite" hidden>
+        <div class="result-badge" id="result-badge"></div>
+        <h2 tabindex="-1" id="result-title"></h2>
+        <p class="result-intro" id="result-intro"></p>
+
+        <div class="result-plan" id="result-plan">
+          <article>
+            <span class="result-plan__number">01</span>
+            <div><h3 data-copy="resultStartLabel">Prima vizită</h3><p id="result-start"></p></div>
+          </article>
+          <article>
+            <span class="result-plan__number">02</span>
+            <div><h3 data-copy="resultRhythmLabel">Ritm orientativ</h3><p id="result-rhythm"></p></div>
+          </article>
+          <article>
+            <span class="result-plan__number">03</span>
+            <div><h3 data-copy="resultReviewLabel">Moment de reevaluare</h3><p id="result-review"></p></div>
+          </article>
+        </div>
+
+        <div class="gift-card" id="gift-card">
+          <div class="gift-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 10h16v10H4zM2 6h20v4H2zM12 6v14"/><path d="M12 6C9 6 7 5 7 3.5 7 2.5 7.8 2 9 2c1.7 0 3 2 3 4ZM12 6c3 0 5-1 5-2.5C17 2.5 16.2 2 15 2c-1.7 0-3 2-3 4Z"/></svg>
+          </div>
+          <div class="gift-card__copy">
+            <p class="gift-card__eyebrow" data-copy="giftEyebrow">Cadoul tău de bun venit</p>
+            <h3 data-copy="giftTitle">Prima ședință cadou la cumpărarea unui abonament</h3>
+            <p data-copy="giftTerms">Pentru clienți noi, după evaluarea în salon și dacă ședința este potrivită pentru tine.</p>
+          </div>
+          <div class="gift-code">
+            <span id="gift-code">GHIDULMEU</span>
+            <button id="copy-code" type="button" data-copy="copyCode">Copiază codul</button>
+          </div>
+        </div>
+
+        <div class="result-actions">
+          <a class="primary-action" href="tel:+37369303403" data-copy="callAction">Sună pentru prima vizită</a>
+          <button class="secondary-action" id="restart-button" type="button" data-copy="restart">Refă ghidul</button>
+        </div>
+
+        <details class="uv-note">
+          <summary data-copy="uvSummary">Informații importante despre UV</summary>
+          <div data-copy="uvDetails">Bronzarea cu UV nu este lipsită de riscuri. Acest ghid nu este o evaluare medicală și nu stabilește minutele unei ședințe. Timpul se stabilește în salon conform echipamentului, instrucțiunilor producătorului și evaluării personalului. Nu continua dacă pielea este roșie sau sensibilă și folosește întotdeauna protecția oculară indicată.</div>
+        </details>
+      </section>
+    </section>
+  </main>
+
+  <footer class="guide-footer">
+    <p>© <span id="year"></span> SUNCLUB Chișinău</p>
+    <a href="https://www.who.int/news-room/fact-sheets/detail/ultraviolet-radiation" target="_blank" rel="noopener" data-copy="whoLink">Informații OMS despre UV</a>
+  </footer>
+
+  <script src="tan-guide.js"></script>
+</body>
+</html>

@@ -1216,3 +1216,77 @@ body[data-page="promotions"] [data-nav="promotions"] {
   color: var(--orange-ink);
   border-bottom-color: var(--orange);
 }
+
+
+/* ---------- PERSONALIZED TAN GUIDE TEASER ---------- */
+.guide-teaser {
+  padding: 72px 0;
+  background: var(--cream);
+}
+.guide-teaser__card {
+  position: relative;
+  min-height: 340px;
+  display: grid;
+  grid-template-columns: minmax(260px, .8fr) minmax(0, 1.2fr);
+  align-items: center;
+  gap: clamp(36px, 7vw, 90px);
+  overflow: hidden;
+  padding: clamp(36px, 6vw, 72px);
+  border: 1px solid rgba(246, 149, 33, .25);
+  border-radius: var(--radius-lg);
+  background:
+    radial-gradient(circle at 15% 15%, rgba(246, 149, 33, .22), transparent 24rem),
+    var(--white);
+  box-shadow: 0 18px 48px rgba(57, 35, 20, .09);
+}
+.guide-teaser__copy { position: relative; z-index: 2; }
+.guide-teaser__copy .section-title { margin-bottom: 18px; }
+.guide-teaser__copy p {
+  max-width: 640px;
+  margin: 0 0 28px;
+  color: var(--text-muted);
+  line-height: 1.75;
+}
+.guide-teaser__visual {
+  position: relative;
+  width: min(280px, 100%);
+  aspect-ratio: 1;
+  margin: 0 auto;
+}
+.guide-teaser__sun {
+  position: absolute;
+  inset: 8%;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ffc56d, #e66b17);
+  box-shadow: 0 25px 50px rgba(230, 107, 23, .22);
+}
+.guide-teaser__sun::before {
+  content: "";
+  position: absolute;
+  inset: 23%;
+  border: 2px solid rgba(255,255,255,.72);
+  border-radius: 50%;
+}
+.guide-teaser__tone {
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  border: 5px solid var(--white);
+  border-radius: 50%;
+  box-shadow: 0 8px 18px rgba(57,35,20,.18);
+}
+.guide-teaser__tone--1 { top: 3%; left: 4%; background: #f6d7c8; }
+.guide-teaser__tone--2 { top: 3%; right: 4%; background: #cf9574; }
+.guide-teaser__tone--3 { bottom: 3%; left: 4%; background: #aa6d4d; }
+.guide-teaser__tone--4 { bottom: 3%; right: 4%; background: #4d2d23; }
+@media (max-width: 720px) {
+  .guide-teaser { padding: 52px 0; }
+  .guide-teaser__card {
+    min-height: 0;
+    grid-template-columns: 1fr;
+    gap: 28px;
+    text-align: center;
+  }
+  .guide-teaser__visual { width: 190px; }
+  .guide-teaser__copy p { margin-left: auto; margin-right: auto; }
+}
