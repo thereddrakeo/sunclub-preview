@@ -686,3 +686,9 @@ legend:focus { outline: none; }
     min-width: 0;
   }
 }
+
+
+/* Render the official white-backed logo cleanly on the cream guide header. */
+.guide-logo img {
+  mix-blend-mode: multiply;
+}
