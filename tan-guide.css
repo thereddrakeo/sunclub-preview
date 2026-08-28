@@ -618,3 +618,44 @@ legend:focus { outline: none; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }
 }
+
+
+/* ---------- LIGHTER PLAN RESULT ---------- */
+.minutes-card {
+  margin: 22px 0 18px;
+  padding: 22px;
+  border-radius: var(--radius-lg);
+  color: #fff;
+  background: linear-gradient(135deg, var(--orange-dark), #d86c1f);
+  box-shadow: 0 16px 32px rgba(173, 67, 10, .2);
+  text-align: center;
+}
+.minutes-card > p:first-child {
+  margin: 0 0 7px;
+  color: rgba(255,255,255,.82);
+  font-size: .68rem;
+  font-weight: 800;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+}
+.minutes-card__value {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 9px;
+}
+.minutes-card__value strong {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(3.8rem, 9vw, 5.6rem);
+  line-height: .9;
+}
+.minutes-card__value span {
+  font-size: .95rem;
+  font-weight: 800;
+}
+#result-minutes-note {
+  max-width: 430px;
+  margin: 12px auto 0;
+  color: rgba(255,255,255,.86);
+  font-size: .75rem;
+}
