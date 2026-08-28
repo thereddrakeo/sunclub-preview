@@ -4,17 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ghidul tău de bronzare | SUNCLUB Chișinău</title>
-  <meta name="description" content="Răspunde la câteva întrebări și primește un punct de pornire personalizat pentru prima vizită la SUNCLUB, plus un cadou de bun venit.">
+  <meta name="description" content="Răspunde la câteva întrebări și primește un punct de pornire personalizat pentru prima vizită la SUNCLUB.">
   <link rel="canonical" href="https://www.sunclub.md/tan-guide.html">
   <link rel="icon" type="image/webp" href="images/logo-original.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="tan-guide.css?v=4">
+  <link rel="stylesheet" href="tan-guide.css?v=5">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="SUNCLUB Chișinău">
   <meta property="og:title" content="Descoperă punctul tău de pornire la SUNCLUB">
-  <meta property="og:description" content="Un ghid scurt pentru prima vizită, cu un cadou la final.">
+  <meta property="og:description" content="Un ghid scurt și personalizat pentru prima vizită la SUNCLUB.">
   <meta property="og:url" content="https://www.sunclub.md/tan-guide.html">
   <meta property="og:image" content="https://www.sunclub.md/images/hero.webp">
 </head>
@@ -39,11 +39,11 @@
     <section class="guide-intro" aria-labelledby="guide-title">
       <p class="eyebrow" data-copy="eyebrow">Ghid personalizat · 2 minute</p>
       <h1 id="guide-title" data-copy="title">Cu ce să începi la prima vizită?</h1>
-      <p class="guide-intro__lead" data-copy="lead">Patru întrebări simple, un plan clar pentru prima vizită și un cadou de bun venit la final.</p>
+      <p class="guide-intro__lead" data-copy="lead">Patru întrebări simple și un plan clar pentru prima vizită.</p>
       <ul class="benefit-list" aria-label="Beneficiile ghidului">
         <li><span class="benefit-icon" aria-hidden="true">1</span><span data-copy="benefit1">Minute estimate pentru prima ședință</span></li>
         <li><span class="benefit-icon" aria-hidden="true">2</span><span data-copy="benefit2">Câte vizite ar putea dura până la nuanța dorită</span></li>
-        <li><span class="benefit-icon" aria-hidden="true">3</span><span data-copy="benefit3">Prima ședință cadou la abonament</span></li>
+        <li><span class="benefit-icon" aria-hidden="true">3</span><span data-copy="benefit3">Un ritm orientativ adaptat răspunsurilor tale</span></li>
       </ul>
       <div class="privacy-note">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10V8a5 5 0 0 1 10 0v2"/><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M12 14v3"/></svg>
@@ -125,11 +125,9 @@
             <legend tabindex="-1" data-copy="lastTitle">Când ai avut ultima expunere intenționată la UV?</legend>
             <p class="question-help" data-copy="lastHelp">Include solarul sau statul deliberat la soare pentru bronz.</p>
             <div class="choice-stack">
-              <label class="choice-card"><input type="radio" name="lastExposure" value="never"><span data-copy="lastNever">Niciodată / ar fi prima dată</span></label>
-              <label class="choice-card"><input type="radio" name="lastExposure" value="over3"><span data-copy="lastOver3">Acum mai mult de 3 luni</span></label>
-              <label class="choice-card"><input type="radio" name="lastExposure" value="oneToThree"><span data-copy="lastOneToThree">Acum 1–3 luni</span></label>
-              <label class="choice-card"><input type="radio" name="lastExposure" value="twoToFourWeeks"><span data-copy="lastWeeks">Acum 2–4 săptămâni</span></label>
               <label class="choice-card"><input type="radio" name="lastExposure" value="recent"><span data-copy="lastRecent">În ultimele 7 zile</span></label>
+              <label class="choice-card"><input type="radio" name="lastExposure" value="twoToFourWeeks"><span data-copy="lastWeeks">Acum 2–4 săptămâni</span></label>
+              <label class="choice-card"><input type="radio" name="lastExposure" value="overFourWeeks"><span data-copy="lastOverFour">Acum mai mult de 4 săptămâni</span></label>
             </div>
           </fieldset>
         </section>
@@ -171,22 +169,19 @@
             <span class="result-plan__number">03</span>
             <div><h3 data-copy="resultReviewLabel">Moment de reevaluare</h3><p id="result-review"></p></div>
           </article>
+          <article>
+            <span class="result-plan__number">04</span>
+            <div><h3 data-copy="resultMaintenanceLabel">Menținerea nuanței</h3><p id="result-maintenance"></p></div>
+          </article>
         </div>
 
-        <div class="gift-card" id="gift-card">
-          <div class="gift-card__icon" aria-hidden="true">
+        <button class="reward-reopen" id="reward-reopen" type="button" hidden>
+          <span class="reward-reopen__icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M4 10h16v10H4zM2 6h20v4H2zM12 6v14"/><path d="M12 6C9 6 7 5 7 3.5 7 2.5 7.8 2 9 2c1.7 0 3 2 3 4ZM12 6c3 0 5-1 5-2.5C17 2.5 16.2 2 15 2c-1.7 0-3 2-3 4Z"/></svg>
-          </div>
-          <div class="gift-card__copy">
-            <p class="gift-card__eyebrow" data-copy="giftEyebrow">Cadoul tău de bun venit</p>
-            <h3 data-copy="giftTitle">Prima ședință cadou la cumpărarea unui abonament</h3>
-            <p data-copy="giftTerms">Arată codul la recepție când cumperi primul abonament.</p>
-          </div>
-          <div class="gift-code">
-            <span id="gift-code">GHIDULMEU</span>
-            <button id="copy-code" type="button" data-copy="copyCode">Copiază codul</button>
-          </div>
-        </div>
+          </span>
+          <span><small data-copy="rewardUnlocked">Surpriza ta este deblocată</small><strong data-copy="viewReward">Vezi cadoul</strong></span>
+          <svg class="reward-reopen__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
 
         <div class="result-actions">
           <a class="primary-action" href="tel:+37369303403" data-copy="callAction">Sună pentru prima vizită</a>
@@ -201,11 +196,53 @@
     </section>
   </main>
 
+  <div class="gift-modal" id="gift-modal" hidden>
+    <div class="gift-modal__scrim" data-close-gift></div>
+    <section class="gift-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="gift-modal-title" aria-describedby="gift-modal-description" tabindex="-1">
+      <button class="gift-modal__close" id="close-gift" type="button" aria-label="Închide cadoul">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+      </button>
+      <div class="gift-modal__burst" aria-hidden="true">
+        <svg viewBox="0 0 64 64"><path d="M15 27h34v25H15zM10 17h44v12H10zM32 17v35"/><path d="M32 17c-8 0-13-3-13-8 0-3 2-5 6-5 5 0 7 6 7 13ZM32 17c8 0 13-3 13-8 0-3-2-5-6-5-5 0-7 6-7 13Z"/></svg>
+      </div>
+      <p class="gift-modal__eyebrow" data-copy="surpriseEyebrow">Surpriză deblocată</p>
+      <h2 id="gift-modal-title" data-copy="giftTitle">Prima ședință cadou la cumpărarea unui abonament</h2>
+      <p id="gift-modal-description" class="gift-modal__intro" data-copy="giftTerms">Fă o captură de ecran și arat-o la recepție când cumperi primul abonament.</p>
+
+      <div class="reward-timer">
+        <span data-copy="expiresIn">Cadoul expiră în</span>
+        <strong id="reward-countdown" role="timer">7 zile · 00:00:00</strong>
+        <p><span data-copy="validUntil">Valabil până la</span> <b id="reward-expiry-date"></b></p>
+      </div>
+
+      <div class="gift-card">
+        <div class="gift-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M4 10h16v10H4zM2 6h20v4H2zM12 6v14"/><path d="M12 6C9 6 7 5 7 3.5 7 2.5 7.8 2 9 2c1.7 0 3 2 3 4ZM12 6c3 0 5-1 5-2.5C17 2.5 16.2 2 15 2c-1.7 0-3 2-3 4Z"/></svg>
+        </div>
+        <div class="gift-card__copy">
+          <p class="gift-card__eyebrow" data-copy="voucherEyebrow">Voucherul tău</p>
+          <h3 data-copy="voucherTitle">Prima ședință cadou</h3>
+          <p data-copy="voucherTerms">Valabil la cumpărarea primului abonament SUNCLUB.</p>
+        </div>
+        <div class="gift-code">
+          <span id="gift-code">GHIDULMEU</span>
+          <button id="copy-code" type="button" data-copy="copyCode">Copiază codul</button>
+        </div>
+      </div>
+
+      <div class="screenshot-note">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3"/><path d="M8 5l1-2h6l1 2"/></svg>
+        <span data-copy="screenshotNote">Fă acum o captură de ecran. Voucherul trebuie prezentat înainte de data de expirare.</span>
+      </div>
+      <button class="primary-action gift-modal__done" id="gift-done" type="button" data-copy="screenshotDone">Am făcut captura</button>
+    </section>
+  </div>
+
   <footer class="guide-footer">
     <p>© <span id="year"></span> SUNCLUB Chișinău</p>
     <a href="https://www.who.int/news-room/fact-sheets/detail/ultraviolet-radiation" target="_blank" rel="noopener" data-copy="whoLink">Informații OMS despre UV</a>
   </footer>
 
-  <script src="tan-guide.js?v=2"></script>
+  <script src="tan-guide.js?v=3"></script>
 </body>
 </html>

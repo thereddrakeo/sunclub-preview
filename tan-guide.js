@@ -4,9 +4,9 @@
   const copy = {
     ro: {
       exit: "Ieși", eyebrow: "Ghid personalizat · 2 minute", title: "Cu ce să începi la prima vizită?",
-      lead: "Patru întrebări simple, un plan clar pentru prima vizită și un cadou de bun venit la final.",
+      lead: "Patru întrebări simple și un plan clar pentru prima vizită.",
       benefit1: "Minute estimate pentru prima ședință", benefit2: "Câte vizite ar putea dura până la nuanța dorită",
-      benefit3: "Prima ședință cadou la abonament", privacy: "Răspunsurile rămân pe dispozitivul tău. Nu cerem date personale.",
+      benefit3: "Un ritm orientativ adaptat răspunsurilor tale", privacy: "Răspunsurile rămân pe dispozitivul tău. Nu cerem date personale.",
       progressLabel: "Progres", startKicker: "Pentru vizitatori noi", startTitle: "Găsește-ți punctul de pornire",
       startText: "Sunt doar patru întrebări scurte. Alege ce te descrie cel mai bine și vezi planul tău.",
       startButton: "Începe ghidul", startTime: "Durează aproximativ 2 minute",
@@ -17,13 +17,19 @@
       burnSometimes: "Uneori mă înroșesc, dar mă bronzez treptat", burnRarely: "Rareori mă ard și capăt culoare ușor",
       goalTitle: "Ce nuanță ți-ar plăcea să obții?", goalHelp: "Alege nuanța spre care ai vrea să evoluezi treptat.",
       lastTitle: "Când ai avut ultima expunere intenționată la UV?", lastHelp: "Include solarul sau statul deliberat la soare pentru bronz.",
-      lastNever: "Niciodată / ar fi prima dată", lastOver3: "Acum mai mult de 3 luni", lastOneToThree: "Acum 1–3 luni",
-      lastWeeks: "Acum 2–4 săptămâni", lastRecent: "În ultimele 7 zile",
+      lastRecent: "În ultimele 7 zile", lastWeeks: "Acum 2–4 săptămâni", lastOverFour: "Acum mai mult de 4 săptămâni",
       back: "Înapoi", next: "Continuă", finish: "Vezi planul meu", validation: "Alege un răspuns pentru a continua.",
       minutesEyebrow: "Prima ședință estimată", minutesUnit: "minute",
       resultStartLabel: "Prima vizită", resultRhythmLabel: "Ritmul recomandat", resultReviewLabel: "Până la nuanța dorită",
-      giftEyebrow: "Cadoul tău de bun venit", giftTitle: "Prima ședință cadou la cumpărarea unui abonament",
-      giftTerms: "Arată codul la recepție când cumperi primul abonament.", copyCode: "Copiază codul", copied: "Cod copiat",
+      resultMaintenanceLabel: "Menținerea nuanței",
+      giftTitle: "Prima ședință cadou la cumpărarea unui abonament",
+      giftTerms: "Fă o captură de ecran și arat-o la recepție când cumperi primul abonament.",
+      rewardUnlocked: "Surpriza ta este deblocată", viewReward: "Vezi cadoul", surpriseEyebrow: "Surpriză deblocată",
+      expiresIn: "Cadoul expiră în", validUntil: "Valabil până la", voucherEyebrow: "Voucherul tău",
+      voucherTitle: "Prima ședință cadou", voucherTerms: "Valabil la cumpărarea primului abonament SUNCLUB.",
+      screenshotNote: "Fă acum o captură de ecran. Voucherul trebuie prezentat înainte de data de expirare.",
+      screenshotDone: "Am făcut captura", closeReward: "Închide cadoul", expired: "Voucher expirat",
+      copyCode: "Copiază codul", copied: "Cod copiat",
       callAction: "Sună pentru prima vizită", restart: "Refă ghidul", uvSummary: "De reținut",
       uvDetails: "Estimările sunt orientative. Consultantul SUNCLUB confirmă timpul final în funcție de cabină și reacția pielii. Nu folosi solarul pe piele roșie sau iritată și poartă întotdeauna protecția oculară indicată.",
       whoLink: "Informații OMS despre UV",
@@ -38,14 +44,15 @@
       startPlan: (minutes) => "Începe cu aproximativ " + minutes + " minute. La recepție, consultantul confirmă setarea potrivită pentru cabină.",
       rhythmGentle: "Aproximativ 2 vizite pe săptămână, cu minimum 48 de ore între ședințe.",
       rhythmRegular: "Aproximativ 2–3 vizite pe săptămână, fără ședințe în zile consecutive.",
-      targetMaintain: "Pentru menținerea nuanței actuale: aproximativ 1–2 ședințe, apoi reevaluează.",
+      targetMaintain: "Nuanța aleasă este deja apropiată de cea actuală. Reevaluează după prima vizită împreună cu consultantul.",
+      maintenancePlan: "După ce ajungi la nuanța dorită, continuă orientativ cu 1–2 vizite pe săptămână pentru menținere.",
       targetPlan: (low, high, weeksLow, weeksHigh) => "Aproximativ " + low + "–" + high + " ședințe, adică în jur de " + weeksLow + "–" + weeksHigh + " săptămâni. Rezultatul diferă în funcție de răspunsul natural al pielii."
     },
     ru: {
       exit: "Выйти", eyebrow: "Персональный гид · 2 минуты", title: "С чего начать первое посещение?",
-      lead: "Четыре простых вопроса, понятный план первого визита и приветственный подарок в конце.",
+      lead: "Четыре простых вопроса и понятный план первого визита.",
       benefit1: "Примерное время первого сеанса", benefit2: "Сколько визитов может потребоваться до желаемого оттенка",
-      benefit3: "Первый сеанс в подарок к абонементу", privacy: "Ответы остаются на вашем устройстве. Мы не запрашиваем личные данные.",
+      benefit3: "Ориентировочный ритм с учётом ваших ответов", privacy: "Ответы остаются на вашем устройстве. Мы не запрашиваем личные данные.",
       progressLabel: "Прогресс", startKicker: "Для новых посетителей", startTitle: "Найдите свою отправную точку",
       startText: "Всего четыре коротких вопроса. Выберите то, что лучше всего вас описывает, и получите свой план.",
       startButton: "Начать", startTime: "Займёт около 2 минут",
@@ -56,13 +63,19 @@
       burnSometimes: "Иногда краснею, но постепенно загораю", burnRarely: "Редко обгораю и легко приобретаю цвет",
       goalTitle: "Какой оттенок вы хотели бы получить?", goalHelp: "Выберите оттенок, к которому хотите прийти постепенно.",
       lastTitle: "Когда у вас в последний раз было намеренное воздействие УФ?", lastHelp: "Учитывайте солярий или намеренное пребывание на солнце ради загара.",
-      lastNever: "Никогда / это будет первый раз", lastOver3: "Более 3 месяцев назад", lastOneToThree: "1–3 месяца назад",
-      lastWeeks: "2–4 недели назад", lastRecent: "В последние 7 дней",
+      lastRecent: "В последние 7 дней", lastWeeks: "2–4 недели назад", lastOverFour: "Более 4 недель назад",
       back: "Назад", next: "Продолжить", finish: "Показать мой план", validation: "Выберите ответ, чтобы продолжить.",
       minutesEyebrow: "Примерный первый сеанс", minutesUnit: "минут",
       resultStartLabel: "Первый визит", resultRhythmLabel: "Рекомендуемый ритм", resultReviewLabel: "До желаемого оттенка",
-      giftEyebrow: "Ваш приветственный подарок", giftTitle: "Первый сеанс в подарок при покупке абонемента",
-      giftTerms: "Покажите код на ресепшене при покупке первого абонемента.", copyCode: "Скопировать код", copied: "Код скопирован",
+      resultMaintenanceLabel: "Поддержание оттенка",
+      giftTitle: "Первый сеанс в подарок при покупке абонемента",
+      giftTerms: "Сделайте снимок экрана и покажите его на ресепшене при покупке первого абонемента.",
+      rewardUnlocked: "Ваш сюрприз открыт", viewReward: "Посмотреть подарок", surpriseEyebrow: "Сюрприз открыт",
+      expiresIn: "Подарок истекает через", validUntil: "Действителен до", voucherEyebrow: "Ваш ваучер",
+      voucherTitle: "Первый сеанс в подарок", voucherTerms: "Действует при покупке первого абонемента SUNCLUB.",
+      screenshotNote: "Сделайте снимок экрана сейчас. Ваучер нужно показать до даты окончания срока действия.",
+      screenshotDone: "Снимок сделан", closeReward: "Закрыть подарок", expired: "Срок ваучера истёк",
+      copyCode: "Скопировать код", copied: "Код скопирован",
       callAction: "Позвонить для первого визита", restart: "Пройти заново", uvSummary: "Важно помнить",
       uvDetails: "Оценки ориентировочные. Консультант SUNCLUB подтверждает итоговое время с учётом кабины и реакции кожи. Не используйте солярий при покраснении или раздражении кожи и всегда надевайте указанную защиту глаз.",
       whoLink: "Информация ВОЗ об УФ",
@@ -77,7 +90,8 @@
       startPlan: (minutes) => "Начните примерно с " + minutes + " минут. На ресепшене консультант подтвердит настройку для выбранной кабины.",
       rhythmGentle: "Примерно 2 визита в неделю с интервалом не менее 48 часов.",
       rhythmRegular: "Примерно 2–3 визита в неделю, без сеансов в последовательные дни.",
-      targetMaintain: "Для поддержания текущего оттенка: примерно 1–2 сеанса, затем пересмотрите план.",
+      targetMaintain: "Выбранный оттенок уже близок к текущему. После первого визита пересмотрите план вместе с консультантом.",
+      maintenancePlan: "После достижения желаемого оттенка ориентировочно продолжайте 1–2 посещения в неделю для поддержания результата.",
       targetPlan: (low, high, weeksLow, weeksHigh) => "Примерно " + low + "–" + high + " сеансов, то есть около " + weeksLow + "–" + weeksHigh + " недель. Результат зависит от естественной реакции кожи."
     }
   };
@@ -92,6 +106,12 @@
   const resultScreen = document.getElementById("result-screen");
   const nextButton = document.getElementById("next-button");
   const validation = document.getElementById("validation-message");
+  const giftModal = document.getElementById("gift-modal");
+  const giftDialog = giftModal.querySelector(".gift-modal__dialog");
+  const rewardReopen = document.getElementById("reward-reopen");
+  let rewardExpiresAt = null;
+  let rewardTimerId = null;
+  let modalReturnFocus = null;
 
   function t(key) {
     return key.split(".").reduce((value, part) => value && value[part], copy[language]);
@@ -131,6 +151,8 @@
       if (input) input.checked = true;
     });
     updateControls();
+    document.getElementById("close-gift").setAttribute("aria-label", t("closeReward"));
+    updateRewardDetails();
     if (!resultScreen.hidden) showResult();
   }
 
@@ -198,7 +220,79 @@
     return { minutes, style, difference, low, high, weeksLow, weeksHigh };
   }
 
-  function showResult() {
+  function updateRewardDetails() {
+    if (!rewardExpiresAt) return;
+    const locale = language === "ru" ? "ru-MD" : "ro-MD";
+    document.getElementById("reward-expiry-date").textContent = new Intl.DateTimeFormat(locale, {
+      dateStyle: "long",
+      timeStyle: "short"
+    }).format(new Date(rewardExpiresAt));
+    updateRewardCountdown();
+  }
+
+  function updateRewardCountdown() {
+    if (!rewardExpiresAt) return;
+    const countdown = document.getElementById("reward-countdown");
+    const remaining = Math.max(0, rewardExpiresAt - Date.now());
+    if (remaining <= 0) {
+      countdown.textContent = t("expired");
+      countdown.setAttribute("aria-label", t("expired"));
+      return;
+    }
+    const totalSeconds = Math.ceil(remaining / 1000);
+    const days = Math.floor(totalSeconds / 86400);
+    const hours = Math.floor((totalSeconds % 86400) / 3600);
+    const minutes = Math.floor((totalSeconds % 3600) / 60);
+    const seconds = totalSeconds % 60;
+    const pad = (value) => String(value).padStart(2, "0");
+    const dayLabel = language === "ru" ? "дн." : "zile";
+    countdown.textContent = days + " " + dayLabel + " · " + pad(hours) + ":" + pad(minutes) + ":" + pad(seconds);
+    countdown.setAttribute("aria-label", countdown.textContent);
+  }
+
+  function openGiftModal() {
+    modalReturnFocus = document.activeElement;
+    giftModal.hidden = false;
+    rewardReopen.hidden = true;
+    document.body.classList.add("has-gift-modal");
+    updateRewardDetails();
+    clearInterval(rewardTimerId);
+    rewardTimerId = window.setInterval(updateRewardCountdown, 1000);
+    requestAnimationFrame(() => giftDialog.focus());
+  }
+
+  function closeGiftModal() {
+    giftModal.hidden = true;
+    document.body.classList.remove("has-gift-modal");
+    rewardReopen.hidden = false;
+    clearInterval(rewardTimerId);
+    rewardTimerId = null;
+    if (modalReturnFocus && typeof modalReturnFocus.focus === "function") modalReturnFocus.focus();
+  }
+
+  function handleGiftKeydown(event) {
+    if (giftModal.hidden) return;
+    if (event.key === "Escape") {
+      event.preventDefault();
+      closeGiftModal();
+      return;
+    }
+    if (event.key !== "Tab") return;
+    const focusable = Array.from(giftDialog.querySelectorAll("button, a[href], input, [tabindex]:not([tabindex='-1'])"))
+      .filter((element) => !element.disabled && !element.hidden);
+    if (!focusable.length) return;
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first.focus();
+    }
+  }
+
+  function showResult(revealReward = false) {
     form.hidden = true;
     progressRegion.hidden = true;
     resultScreen.hidden = false;
@@ -217,6 +311,12 @@
     document.getElementById("result-review").textContent = plan.difference === 0
       ? dict.targetMaintain
       : dict.targetPlan(plan.low, plan.high, plan.weeksLow, plan.weeksHigh);
+    document.getElementById("result-maintenance").textContent = dict.maintenancePlan;
+
+    if (!rewardExpiresAt) rewardExpiresAt = Date.now() + (7 * 24 * 60 * 60 * 1000);
+    updateRewardDetails();
+    rewardReopen.hidden = revealReward || !giftModal.hidden;
+    if (revealReward) window.setTimeout(openGiftModal, 350);
 
     requestAnimationFrame(() => document.getElementById("result-title").focus());
     window.scrollTo({ top: document.getElementById("guide-card").offsetTop - 20, behavior: "smooth" });
@@ -232,7 +332,7 @@
   nextButton.addEventListener("click", () => {
     if (!validateStep()) return;
     if (currentStep < totalSteps) showStep(currentStep + 1);
-    else showResult();
+    else showResult(true);
   });
 
   document.getElementById("back-button").addEventListener("click", () => {
@@ -245,6 +345,12 @@
       document.getElementById("start-button").focus();
     }
   });
+
+  document.getElementById("close-gift").addEventListener("click", closeGiftModal);
+  document.getElementById("gift-done").addEventListener("click", closeGiftModal);
+  document.querySelector("[data-close-gift]").addEventListener("click", closeGiftModal);
+  rewardReopen.addEventListener("click", openGiftModal);
+  document.addEventListener("keydown", handleGiftKeydown);
 
   document.getElementById("copy-code").addEventListener("click", async (event) => {
     const code = document.getElementById("gift-code").textContent;
@@ -262,6 +368,10 @@
     resultScreen.hidden = true;
     startScreen.hidden = false;
     currentStep = 0;
+    rewardExpiresAt = null;
+    rewardReopen.hidden = true;
+    clearInterval(rewardTimerId);
+    rewardTimerId = null;
     window.scrollTo({ top: 0, behavior: "smooth" });
     document.getElementById("start-button").focus();
   });
