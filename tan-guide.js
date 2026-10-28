@@ -328,8 +328,8 @@
     if (!rewardScrollArmed || rewardAutoShown || !giftModal.hidden) return;
     const distanceScrolled = Math.abs(window.scrollY - rewardScrollStart);
     const giftButtonTop = rewardReopen.getBoundingClientRect().top;
-    const lateRevealLine = window.innerHeight * 0.82;
-    if (distanceScrolled < 260 || giftButtonTop > lateRevealLine) return;
+    const lateRevealLine = window.innerHeight * 0.55;
+    if (distanceScrolled < 500 || giftButtonTop > lateRevealLine) return;
     rewardAutoShown = true;
     openGiftModal();
   }
