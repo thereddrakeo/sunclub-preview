@@ -15,25 +15,29 @@
       burnTitle: "Cum reacționează pielea ta de obicei la soare?", burnHelp: "Alege varianta cea mai apropiată de experiența ta.",
       burnAlways: "Mă ard aproape întotdeauna și mă bronzez foarte greu", burnOften: "Mă ard ușor, apoi capăt puțină culoare",
       burnSometimes: "Uneori mă înroșesc, dar mă bronzez treptat", burnRarely: "Rareori mă ard și capăt culoare ușor",
-      goalTitle: "Ce nuanță ți-ar plăcea să obții?", goalHelp: "Alege nuanța spre care ai vrea să evoluezi treptat.",
+      goalTitle: "Ce nuanță ți-ar plăcea să obții?", goalHelp: "Poți alege doar o nuanță mai închisă decât cea actuală.",
       lastTitle: "Când ai avut ultima expunere intenționată la UV?", lastHelp: "Include solarul sau statul deliberat la soare pentru bronz.",
       lastRecent: "În ultimele 7 zile", lastWeeks: "Acum 2–4 săptămâni", lastOverFour: "Acum mai mult de 4 săptămâni",
       back: "Înapoi", next: "Continuă", finish: "Vezi planul meu", validation: "Alege un răspuns pentru a continua.",
       minutesEyebrow: "Interval estimat pentru prima ședință", minutesUnit: "minute",
-      resultStartLabel: "Prima vizită", resultRhythmLabel: "Primele 3 vizite", resultBuildLabel: "După primele 3 vizite",
+      resultStartLabel: "Prima vizită", resultRhythmLabel: "Primele 2–3 zile", resultBuildLabel: "După primele 2–3 zile",
       resultReviewLabel: "Până la nuanța dorită", resultMaintenanceLabel: "Menținerea nuanței",
       giftTitle: "Prima ședință cadou la cumpărarea unui abonament",
       giftTerms: "Fă o captură de ecran și arat-o la recepție când cumperi primul abonament.",
       rewardUnlocked: "Surpriza ta este deblocată", viewReward: "Vezi cadoul", surpriseEyebrow: "Surpriză deblocată",
       expiresIn: "Cadoul expiră în", validUntil: "Valabil până la", voucherEyebrow: "Voucherul tău",
-      voucherTitle: "Prima ședință cadou", voucherTerms: "Valabil la cumpărarea primului abonament SUNCLUB.",
+      voucherTitle: "Prima ședință cadou", voucherTerms: "Condițiile ofertei sunt afișate mai jos.",
+      eligibilityNew: "Exclusiv pentru clienți noi — prima vizită la SUNCLUB",
+      eligibilityPlans: "Valabil la cumpărarea unui abonament de 60, 90 sau 120 de minute",
+      eligibilitySession: "Cadou este ședința cu durata mai mică, la solarul vertical sau cabina de picioare",
       screenshotNote: "Fă acum o captură de ecran. Voucherul trebuie prezentat înainte de data de expirare.",
       screenshotDone: "Am făcut captura", closeReward: "Închide cadoul", expired: "Voucher expirat",
       copyCode: "Copiază codul", copied: "Cod copiat",
-      callAction: "Sună pentru prima vizită", restart: "Refă ghidul", uvSummary: "De reținut",
-      uvDetails: "Estimările sunt orientative. Consultantul SUNCLUB confirmă timpul exact în funcție de cabină și reacția pielii. Păstrează minimum 48 de ore între ședințe, nu folosi solarul pe piele roșie sau iritată și poartă protecția oculară indicată.",
+      restart: "Refă ghidul", uvSummary: "De reținut",
+      uvDetails: "Estimările sunt orientative. Consultantul SUNCLUB confirmă timpul exact. Primele 2–3 expuneri pot fi în zile consecutive numai dacă sunt foarte scurte și pielea nu este roșie sau iritată; după aceea, continuă gradual, aproximativ o dată la 2 zile.",
       whoLink: "Informații OMS despre UV",
-      toneLabels: ["Foarte deschisă", "Deschisă", "Deschis-mediu", "Medie", "Măslinie", "Închisă"],
+      toneLabels: ["Foarte deschisă", "Deschisă", "Deschis-mediu", "Medie", "Bronzată"],
+      unavailableGoal: "Nu este mai închisă", deeperGoal: "Puțin mai intensă",
       gentleBadge: "Plan delicat", gentleTitle: "Un început blând ți se potrivește",
       gentleIntro: "Pielea ta pare să aibă nevoie de un ritm mai lent. Începe scurt și lasă culoarea să se construiască treptat.",
       balancedBadge: "Plan gradual", balancedTitle: "Un ritm gradual ți se potrivește",
@@ -42,8 +46,8 @@
       easyIntro: "Răspunsurile tale indică o toleranță mai bună, dar progresul gradual rămâne cea mai bună abordare.",
       minuteNote: "Interval orientativ. Consultantul de la recepție stabilește timpul exact înainte de ședință; când există dubii, alegem mai puține minute.",
       startPlan: (minMinutes, maxMinutes) => "Punctul de pornire estimat este " + minMinutes + "–" + maxMinutes + " minute. Consultantul verifică pielea și cabina, apoi confirmă timpul exact.",
-      firstThreePlan: "Păstrează primele 3 vizite foarte ușoare și minimum 48 de ore între ședințe. Începe la capătul inferior al intervalului.",
-      afterThreePlan: "Dacă pielea nu este roșie sau iritată, continuă aproximativ o dată la 2 zile. Crește timpul numai gradual și alege întotdeauna varianta cu mai puține minute.",
+      firstThreePlan: "În primele 2–3 zile poți veni zilnic, dar numai pentru expuneri foarte ușoare, la capătul inferior al intervalului și doar dacă pielea nu este roșie sau iritată.",
+      afterThreePlan: "După aceste prime zile, continuă aproximativ o dată la 2 zile. Crește timpul numai gradual și alege întotdeauna varianta cu mai puține minute.",
       targetMaintain: "Nuanța aleasă este deja apropiată de cea actuală. Reevaluează după prima vizită împreună cu consultantul.",
       maintenancePlan: "După ce ajungi la nuanța dorită, continuă orientativ cu 1–2 vizite pe săptămână pentru menținere.",
       targetPlan: (low, high, weeksLow, weeksHigh) => "Aproximativ " + low + "–" + high + " ședințe, adică în jur de " + weeksLow + "–" + weeksHigh + " săptămâni. Rezultatul diferă în funcție de răspunsul natural al pielii."
@@ -61,25 +65,29 @@
       burnTitle: "Как ваша кожа обычно реагирует на солнце?", burnHelp: "Выберите вариант, наиболее близкий к вашему опыту.",
       burnAlways: "Почти всегда обгораю и очень плохо загораю", burnOften: "Легко обгораю, затем появляется немного цвета",
       burnSometimes: "Иногда краснею, но постепенно загораю", burnRarely: "Редко обгораю и легко приобретаю цвет",
-      goalTitle: "Какой оттенок вы хотели бы получить?", goalHelp: "Выберите оттенок, к которому хотите прийти постепенно.",
+      goalTitle: "Какой оттенок вы хотели бы получить?", goalHelp: "Можно выбрать только оттенок темнее текущего.",
       lastTitle: "Когда у вас в последний раз было намеренное воздействие УФ?", lastHelp: "Учитывайте солярий или намеренное пребывание на солнце ради загара.",
       lastRecent: "В последние 7 дней", lastWeeks: "2–4 недели назад", lastOverFour: "Более 4 недель назад",
       back: "Назад", next: "Продолжить", finish: "Показать мой план", validation: "Выберите ответ, чтобы продолжить.",
       minutesEyebrow: "Ориентировочный диапазон первого сеанса", minutesUnit: "минут",
-      resultStartLabel: "Первый визит", resultRhythmLabel: "Первые 3 визита", resultBuildLabel: "После первых 3 визитов",
+      resultStartLabel: "Первый визит", resultRhythmLabel: "Первые 2–3 дня", resultBuildLabel: "После первых 2–3 дней",
       resultReviewLabel: "До желаемого оттенка", resultMaintenanceLabel: "Поддержание оттенка",
       giftTitle: "Первый сеанс в подарок при покупке абонемента",
       giftTerms: "Сделайте снимок экрана и покажите его на ресепшене при покупке первого абонемента.",
       rewardUnlocked: "Ваш сюрприз открыт", viewReward: "Посмотреть подарок", surpriseEyebrow: "Сюрприз открыт",
       expiresIn: "Подарок истекает через", validUntil: "Действителен до", voucherEyebrow: "Ваш ваучер",
-      voucherTitle: "Первый сеанс в подарок", voucherTerms: "Действует при покупке первого абонемента SUNCLUB.",
+      voucherTitle: "Первый сеанс в подарок", voucherTerms: "Условия предложения указаны ниже.",
+      eligibilityNew: "Только для новых клиентов — первый визит в SUNCLUB",
+      eligibilityPlans: "Действует при покупке абонемента на 60, 90 или 120 минут",
+      eligibilitySession: "В подарок предоставляется более короткий сеанс в вертикальном солярии или кабине для ног",
       screenshotNote: "Сделайте снимок экрана сейчас. Ваучер нужно показать до даты окончания срока действия.",
       screenshotDone: "Снимок сделан", closeReward: "Закрыть подарок", expired: "Срок ваучера истёк",
       copyCode: "Скопировать код", copied: "Код скопирован",
-      callAction: "Позвонить для первого визита", restart: "Пройти заново", uvSummary: "Важно помнить",
-      uvDetails: "Оценки ориентировочные. Консультант SUNCLUB подтверждает точное время с учётом кабины и реакции кожи. Оставляйте не менее 48 часов между сеансами, не используйте солярий при покраснении или раздражении кожи и всегда надевайте защитные очки.",
+      restart: "Пройти заново", uvSummary: "Важно помнить",
+      uvDetails: "Оценки ориентировочные. Консультант SUNCLUB подтверждает точное время. Первые 2–3 воздействия могут проходить в последовательные дни только при очень коротких сеансах и отсутствии покраснения или раздражения; затем продолжайте постепенно, примерно раз в 2 дня.",
       whoLink: "Информация ВОЗ об УФ",
-      toneLabels: ["Очень светлая", "Светлая", "Светло-средняя", "Средняя", "Оливковая", "Тёмная"],
+      toneLabels: ["Очень светлая", "Светлая", "Светло-средняя", "Средняя", "Загорелая"],
+      unavailableGoal: "Не темнее текущего", deeperGoal: "Немного интенсивнее",
       gentleBadge: "Деликатный план", gentleTitle: "Вам подходит мягкое начало",
       gentleIntro: "Вашей коже, вероятно, нужен более спокойный ритм. Начните с короткого сеанса и наращивайте цвет постепенно.",
       balancedBadge: "Постепенный план", balancedTitle: "Вам подходит постепенный ритм",
@@ -88,15 +96,15 @@
       easyIntro: "Ваши ответы указывают на более высокую переносимость, но постепенный прогресс по-прежнему остаётся лучшим подходом.",
       minuteNote: "Ориентировочный диапазон. Консультант на ресепшене определит точное время перед сеансом; при сомнениях мы выбираем меньше минут.",
       startPlan: (minMinutes, maxMinutes) => "Ориентировочное начало — " + minMinutes + "–" + maxMinutes + " минут. Консультант оценит кожу и кабину, затем подтвердит точное время.",
-      firstThreePlan: "Первые 3 визита должны быть очень лёгкими, с интервалом не менее 48 часов. Начинайте с нижней границы диапазона.",
-      afterThreePlan: "Если кожа не покраснела и не раздражена, продолжайте примерно раз в 2 дня. Увеличивайте время только постепенно и всегда выбирайте меньшее количество минут.",
+      firstThreePlan: "В первые 2–3 дня можно приходить ежедневно, но только на очень лёгкие сеансы у нижней границы диапазона и лишь при отсутствии покраснения или раздражения.",
+      afterThreePlan: "После этих первых дней продолжайте примерно раз в 2 дня. Увеличивайте время только постепенно и всегда выбирайте меньшее количество минут.",
       targetMaintain: "Выбранный оттенок уже близок к текущему. После первого визита пересмотрите план вместе с консультантом.",
       maintenancePlan: "После достижения желаемого оттенка ориентировочно продолжайте 1–2 посещения в неделю для поддержания результата.",
       targetPlan: (low, high, weeksLow, weeksHigh) => "Примерно " + low + "–" + high + " сеансов, то есть около " + weeksLow + "–" + weeksHigh + " недель. Результат зависит от естественной реакции кожи."
     }
   };
 
-  const toneColors = ["#f6d7c8", "#e8bda8", "#cf9574", "#aa6d4d", "#7b4a32", "#4d2d23"];
+  const toneColors = ["#f6d7c8", "#e8b99e", "#cb8f6b", "#aa6d4d", "#925b40"];
   let language = localStorage.getItem("sunclub_lang") === "ru" ? "ru" : "ro";
   let currentStep = 0;
   const totalSteps = 4;
@@ -111,23 +119,76 @@
   const rewardReopen = document.getElementById("reward-reopen");
   let rewardExpiresAt = null;
   let rewardTimerId = null;
+  let rewardArmTimerId = null;
+  let rewardScrollArmed = false;
+  let rewardAutoShown = false;
+  let rewardScrollStart = 0;
   let modalReturnFocus = null;
 
   function t(key) {
     return key.split(".").reduce((value, part) => value && value[part], copy[language]);
   }
 
-  function toneMarkup(name, value, color, label) {
-    return '<label class="tone-card"><input type="radio" name="' + name + '" value="' + value + '"><span class="tone-card__visual"><svg viewBox="0 0 80 92" aria-hidden="true"><circle cx="40" cy="31" r="22" fill="' + color + '"/><path d="M11 89c2-24 15-35 29-35s27 11 29 35" fill="' + color + '"/><path d="M22 27c1-15 9-22 19-22 12 0 19 9 20 22-8-4-13-10-16-17-5 8-12 14-23 17Z" fill="#4b3025" opacity=".88"/></svg></span><span class="tone-card__label">' + label + '</span></label>';
+  function toneMarkup(name, value, color, label, options = {}) {
+    const disabled = Boolean(options.disabled);
+    const intensify = Boolean(options.intensify);
+    const className = "tone-card" + (disabled ? " is-disabled" : "") + (intensify ? " is-intensify" : "");
+    const disabledAttributes = disabled ? ' disabled aria-disabled="true"' : "";
+    const status = disabled ? '<span class="tone-card__status">' + t("unavailableGoal") + "</span>" : "";
+    const marker = disabled
+      ? '<span class="tone-card__marker" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></span>'
+      : intensify
+        ? '<span class="tone-card__marker tone-card__marker--plus" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 6v12M6 12h12"/></svg></span>'
+        : "";
+    return '<label class="' + className + '" data-tone-value="' + value + '">' +
+      '<input type="radio" name="' + name + '" value="' + value + '"' + disabledAttributes + ">" +
+      '<span class="tone-card__visual">' +
+        '<svg viewBox="0 0 96 96" aria-hidden="true">' +
+          '<circle cx="48" cy="48" r="44" fill="#fff1df"/>' +
+          '<path d="M18 94c3-23 15-34 30-34s27 11 30 34" fill="' + color + '"/>' +
+          '<path d="M39 51h18v21H39z" fill="' + color + '"/>' +
+          '<ellipse cx="48" cy="35" rx="21" ry="25" fill="' + color + '"/>' +
+          '<path d="M27 34C27 16 37 8 49 8c15 0 23 12 21 29-7-3-13-9-17-17-5 8-14 13-26 14Z" fill="#4b3025" opacity=".9"/>' +
+          '<path d="M37 39h.1M59 39h.1" stroke="#4b3025" stroke-width="3.2" stroke-linecap="round"/>' +
+          '<path d="M42 49c4 3 8 3 12 0" fill="none" stroke="#4b3025" stroke-width="2" stroke-linecap="round" opacity=".7"/>' +
+          '<path d="M34 28c6-2 12-7 17-15" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" opacity=".22"/>' +
+        "</svg>" + marker +
+      "</span>" +
+      '<span class="tone-card__label">' + label + "</span>" + status +
+    "</label>";
   }
 
-  function renderTones() {
-    ["current-tones", "target-tones"].forEach((id) => {
-      const name = id === "current-tones" ? "currentTone" : "targetTone";
-      document.getElementById(id).innerHTML = toneColors.map((color, index) =>
-        toneMarkup(name, index + 1, color, copy[language].toneLabels[index])
-      ).join("");
+  function restoreToneSelection(name, value) {
+    if (value === null || value === undefined) return;
+    const input = form.querySelector('[name="' + name + '"][value="' + value + '"]:not(:disabled)');
+    if (input) input.checked = true;
+  }
+
+  function renderTargetTones(preferredValue) {
+    const current = Number(selected("currentTone") && selected("currentTone").value);
+    const cards = toneColors.map((color, index) => {
+      const value = index + 1;
+      return toneMarkup("targetTone", value, color, copy[language].toneLabels[index], {
+        disabled: Boolean(current && value <= current)
+      });
     });
+    if (current === toneColors.length) {
+      cards.push(toneMarkup("targetTone", current + 1, toneColors[toneColors.length - 1], t("deeperGoal"), {
+        intensify: true
+      }));
+    }
+    document.getElementById("target-tones").innerHTML = cards.join("");
+    restoreToneSelection("targetTone", preferredValue);
+  }
+
+  function renderTones(savedAnswers) {
+    const savedCurrent = savedAnswers ? savedAnswers.get("currentTone") : selected("currentTone") && selected("currentTone").value;
+    const savedTarget = savedAnswers ? savedAnswers.get("targetTone") : selected("targetTone") && selected("targetTone").value;
+    document.getElementById("current-tones").innerHTML = toneColors.map((color, index) =>
+      toneMarkup("currentTone", index + 1, color, copy[language].toneLabels[index])
+    ).join("");
+    restoreToneSelection("currentTone", savedCurrent);
+    renderTargetTones(savedTarget);
   }
 
   function applyLanguage(nextLanguage) {
@@ -145,13 +206,15 @@
       button.classList.toggle("is-active", active);
       button.setAttribute("aria-pressed", String(active));
     });
-    renderTones();
+    renderTones(savedAnswers);
     savedAnswers.forEach((value, key) => {
+      if (key === "currentTone" || key === "targetTone") return;
       const input = form.querySelector('[name="' + key + '"][value="' + value + '"]');
       if (input) input.checked = true;
     });
     updateControls();
     document.getElementById("close-gift").setAttribute("aria-label", t("closeReward"));
+    document.querySelector(".gift-terms-list").setAttribute("aria-label", language === "ru" ? "Условия ваучера" : "Condițiile voucherului");
     updateRewardDetails();
     if (!resultScreen.hidden) showResult();
   }
@@ -200,8 +263,7 @@
       2: [2, 3],
       3: [3, 4],
       4: [4, 6],
-      5: [5, 7],
-      6: [5, 8]
+      5: [5, 8]
     };
     const [minMinutes, maxMinutes] = timeRanges[currentTone];
 
@@ -255,7 +317,32 @@
     countdown.setAttribute("aria-label", countdown.textContent);
   }
 
+  function disarmRewardScroll() {
+    rewardScrollArmed = false;
+    clearTimeout(rewardArmTimerId);
+    rewardArmTimerId = null;
+    window.removeEventListener("scroll", handleRewardScroll);
+  }
+
+  function handleRewardScroll() {
+    if (!rewardScrollArmed || rewardAutoShown || !giftModal.hidden) return;
+    if (Math.abs(window.scrollY - rewardScrollStart) < 120) return;
+    rewardAutoShown = true;
+    openGiftModal();
+  }
+
+  function armRewardOnScroll() {
+    disarmRewardScroll();
+    rewardArmTimerId = window.setTimeout(() => {
+      rewardScrollStart = window.scrollY;
+      rewardScrollArmed = true;
+      window.addEventListener("scroll", handleRewardScroll, { passive: true });
+    }, 900);
+  }
+
   function openGiftModal() {
+    rewardAutoShown = true;
+    disarmRewardScroll();
     modalReturnFocus = document.activeElement;
     giftModal.hidden = false;
     rewardReopen.hidden = true;
@@ -321,8 +408,8 @@
 
     if (!rewardExpiresAt) rewardExpiresAt = Date.now() + (7 * 24 * 60 * 60 * 1000);
     updateRewardDetails();
-    rewardReopen.hidden = revealReward || !giftModal.hidden;
-    if (revealReward) window.setTimeout(openGiftModal, 350);
+    rewardReopen.hidden = !giftModal.hidden;
+    if (revealReward) armRewardOnScroll();
 
     requestAnimationFrame(() => document.getElementById("result-title").focus());
     window.scrollTo({ top: document.getElementById("guide-card").offsetTop - 20, behavior: "smooth" });
@@ -333,6 +420,12 @@
     form.hidden = false;
     progressRegion.hidden = false;
     showStep(1);
+  });
+
+  form.addEventListener("change", (event) => {
+    if (event.target.name !== "currentTone") return;
+    const previousTarget = selected("targetTone");
+    renderTargetTones(previousTarget && previousTarget.value);
   });
 
   nextButton.addEventListener("click", () => {
@@ -376,6 +469,8 @@
     currentStep = 0;
     rewardExpiresAt = null;
     rewardReopen.hidden = true;
+    rewardAutoShown = false;
+    disarmRewardScroll();
     clearInterval(rewardTimerId);
     rewardTimerId = null;
     window.scrollTo({ top: 0, behavior: "smooth" });

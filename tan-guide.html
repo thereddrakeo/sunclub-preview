@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="tan-guide.css?v=5">
+  <link rel="stylesheet" href="tan-guide.css?v=6">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="SUNCLUB Chișinău">
   <meta property="og:title" content="Descoperă punctul tău de pornire la SUNCLUB">
@@ -115,7 +115,7 @@
         <section class="guide-step" data-step="3" hidden>
           <fieldset>
             <legend tabindex="-1" data-copy="goalTitle">Ce nuanță ți-ar plăcea să obții?</legend>
-            <p class="question-help" data-copy="goalHelp">Alege nuanța spre care ai vrea să evoluezi treptat.</p>
+            <p class="question-help" data-copy="goalHelp">Poți alege doar o nuanță mai închisă decât cea actuală.</p>
             <div class="tone-grid" id="target-tones"></div>
           </fieldset>
         </section>
@@ -163,7 +163,7 @@
           </article>
           <article>
             <span class="result-plan__number">02</span>
-            <div><h3 data-copy="resultRhythmLabel">Primele 3 vizite</h3><p id="result-rhythm"></p></div>
+            <div><h3 data-copy="resultRhythmLabel">Primele 2–3 zile</h3><p id="result-rhythm"></p></div>
           </article>
           <article>
             <span class="result-plan__number">03</span>
@@ -188,13 +188,12 @@
         </button>
 
         <div class="result-actions">
-          <a class="primary-action" href="tel:+37369303403" data-copy="callAction">Sună pentru prima vizită</a>
           <button class="secondary-action" id="restart-button" type="button" data-copy="restart">Refă ghidul</button>
         </div>
 
         <details class="uv-note">
           <summary data-copy="uvSummary">Informații importante despre UV</summary>
-          <div data-copy="uvDetails">Estimările sunt orientative. Consultantul SUNCLUB confirmă timpul exact în funcție de cabină și reacția pielii. Păstrează minimum 48 de ore între ședințe, nu folosi solarul pe piele roșie sau iritată și poartă protecția oculară indicată.</div>
+          <div data-copy="uvDetails">Estimările sunt orientative. Consultantul SUNCLUB confirmă timpul exact. Primele 2–3 expuneri pot fi în zile consecutive numai dacă sunt foarte scurte și pielea nu este roșie sau iritată; după aceea, continuă gradual, aproximativ o dată la 2 zile.</div>
         </details>
       </section>
     </section>
@@ -234,6 +233,12 @@
         </div>
       </div>
 
+      <ul class="gift-terms-list" aria-label="Condițiile voucherului">
+        <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m4 10 4 4 8-9"/></svg><span data-copy="eligibilityNew">Exclusiv pentru clienți noi — prima vizită la SUNCLUB</span></li>
+        <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m4 10 4 4 8-9"/></svg><span data-copy="eligibilityPlans">Valabil la cumpărarea unui abonament de 60, 90 sau 120 de minute</span></li>
+        <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m4 10 4 4 8-9"/></svg><span data-copy="eligibilitySession">Cadou este ședința cu durata mai mică, la solarul vertical sau cabina de picioare</span></li>
+      </ul>
+
       <div class="screenshot-note">
         <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3"/><path d="M8 5l1-2h6l1 2"/></svg>
         <span data-copy="screenshotNote">Fă acum o captură de ecran. Voucherul trebuie prezentat înainte de data de expirare.</span>
@@ -247,6 +252,6 @@
     <a href="https://www.who.int/news-room/fact-sheets/detail/ultraviolet-radiation" target="_blank" rel="noopener" data-copy="whoLink">Informații OMS despre UV</a>
   </footer>
 
-  <script src="tan-guide.js?v=4"></script>
+  <script src="tan-guide.js?v=5"></script>
 </body>
 </html>
